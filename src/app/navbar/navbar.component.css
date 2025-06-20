@@ -10,6 +10,7 @@
 
 a {
     text-transform: uppercase;
+    transition: 0.3s;
 }
 
 .bg-sec {
