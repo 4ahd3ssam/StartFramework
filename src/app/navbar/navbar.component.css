@@ -1,0 +1,17 @@
+.navbar {
+    background-color: var(--main-color);
+    transition: 0.4s;
+    padding-block: 25px;
+
+}
+.shrinked {
+    padding-block: 10px;
+}
+
+a {
+    text-transform: uppercase;
+}
+
+.bg-sec {
+    background-color: var(--secondary-color);
+}

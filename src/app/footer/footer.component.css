@@ -1,0 +1,10 @@
+footer section:nth-child(1) {
+    background-color: var(--main-color);
+}
+footer section:nth-child(2) {
+    background-color: #1a252f;
+}
+.icons>div{
+    width: 36px;
+    height: 36px
+}

@@ -1,0 +1,31 @@
+<section class="py-5">
+    <div class="container">
+        <div class="d-flex justify-content-center align-items-center flex-column pt-5">
+            <header class="d-flex flex-column justify-content-center align-items-center">
+                <h2 class="pt-5 fw-bold">portflio section</h2>
+                <span class="icon-wrapper w-100 text-center">
+                    <i class="fa-solid fa-star text-center"></i>
+                </span>
+            </header>
+        </div>
+        <div class="pt-5">
+            <div class="row g-5">
+                @for (image of images; track $index) {
+                <div class="col-md-6 col-lg-4">
+                    <div class="position-relative img-card">
+                        <div>
+                            <img [src]="image" class="w-100 overflow-hidden rounded-3" alt="">
+                        </div>
+                        <div class="layer overflow-hidden rounded-3 d-flex justify-content-center align-items-center position-absolute top-0 h-100 w-100"
+                            (click)="open(image)">
+                            <i class="fa-solid fa-plus text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                }
+            </div>
+            <app-model-photo [isOpen]="modalOpen" [image]="selectedImage" (close)="closeModal()"></app-model-photo>
+        </div>
+    </div>
+
+</section>

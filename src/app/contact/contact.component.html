@@ -1,0 +1,29 @@
+<section class="pt-5">
+    <div class="container">
+        <div class="d-flex justify-content-center align-items-center flex-column">
+            <header class="pt-5 d-flex flex-column justify-content-center align-items-center">
+                <h2 class="pt-5 fw-bold">conatct section</h2>
+                <span class="icon-wrapper w-100 text-center">
+                    <i class="fa-solid fa-star text-center"></i>
+                </span>
+            </header>
+        </div>
+        <div class="py-5">
+            <form action="" class="w-50 m-auto mt-4">
+                <div class="row gy-5 gap-2 w-100">
+                    @for (input of inputs; track $index) {
+                    <div class="col-12">
+                        <label for={{input.name}} class="position-absolute z-0" #currLabel>{{input.name}}:</label>
+                        <input type={{input.type}} id={{input.name}} placeholder={{input.name}}
+                            class="border-0 border-bottom border-2 position-relative z-1 d-block w-100"
+                            #currInput (input)="checkInput(currInput, currLabel)">
+                    </div>
+                    }
+                    <div>
+                        <div class="btn text-white"> Send Message</div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,30 @@
+.icon-wrapper::before,
+.icon-wrapper::after {
+    background-color: var(--main-color);
+}
+
+h2,
+i {
+    color: var(--main-color)
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+input {
+    outline: 0;
+}
+
+label {
+    color: var(--secondary-color);
+    transition: 0.4s;
+}
+
+.translateUp {
+    transform: translateY(-30px);
+}
+
+div.btn, div.btn:hover, div.btn:active, div.btn:focus-visible {
+    background-color: var(--secondary-color);
+}
